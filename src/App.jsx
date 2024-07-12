@@ -1,10 +1,17 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import Navbar from "./components/Navbar";
+import Landing from "./components/Landing";
+import Marquee from "./components/Marquee";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="w-full h-screen bg-zinc-900 text-white">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div className="w-full min-h-screen bg-zinc-900 text-white">
+      <Navbar />
+      <Landing />
+      <Marquee />
+      <Footer />
     </div>
   );
 }
