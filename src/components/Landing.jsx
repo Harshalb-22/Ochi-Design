@@ -1,4 +1,6 @@
 // eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 import { FaArrowUp } from "react-icons/fa";
@@ -11,12 +13,24 @@ function Landing() {
           return (
             // eslint-disable-next-line react/jsx-key
             <div className="masker">
-              <h1
-                key={index}
-                className="uppercase text-[7.2vw] leading-[6vw] tracking-tighter font-['Founders Grotesk X-Cond Reg'] font-medium"
-              >
-                {item}
-              </h1>
+              <div className="w-fit flex items-end overflow-hidden">
+                {index == 1 && (
+                  <motion.img
+                    initial={{ width: 0 }}
+                    animate={{ width: "9vw" }}
+                    transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                    src="/src/assets/heading.jpg"
+                    className="w-[8vw] h-[5.2vw] rounded-md"
+                    alt="#"
+                  />
+                )}
+                <h1
+                  key={index}
+                  className="uppercase text-[7.2vw] leading-[6vw] tracking-tighter font-['Founders Grotesk X-Cond Reg'] font-medium"
+                >
+                  {item}
+                </h1>
+              </div>
             </div>
           );
         })}
