@@ -19,7 +19,7 @@ function Landing() {
                     initial={{ width: 0 }}
                     animate={{ width: "9vw" }}
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-                    src="/src/assets/heading.jpg"
+                    src="./src/assets/heading.jpg"
                     className="w-[8vw] h-[5.2vw] rounded-md"
                     alt="#"
                   />
